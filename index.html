@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Yuvika ♡</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="bg"></canvas>
+
+<section class="screen" id="gate"><div class="lock-card glass">
+  <div class="lock-icon">🔐</div>
+  <div class="eyebrow">A little secret for someone special</div>
+  <h1>Hey, Yuvika! ♡</h1>
+  <p class="sub">Tara mate kaik special banavyu chhe...<br>Pan unlock karva magic password joiye! ✨</p>
+  <form class="password-row" id="passForm"><input id="password" type="password" inputmode="numeric" maxlength="4" placeholder="••••" autocomplete="off"><button class="btn" type="submit">Unlock ♡</button></form>
+  <div class="error" id="error"></div>
+  <div class="eyebrow">Hint: Our little secret number</div>
+</div></section>
+
+<main id="mainSite">
+  <header class="hero">
+    <div class="eyebrow">A little world made just for you</div>
+    <h1>Happy Birthday<br>Yuvika!</h1>
+    <p>Some people life ma aave chhe ane dhime-dhime life no ek beautiful part bani jaay chhe. Tu evi j ek person chhe. Aaje no divas bas tara mate! 🥹❤️</p>
+    <button class="btn" onclick="document.querySelector('#letter').scrollIntoView()">Open your little surprise ↓</button>
+    <div class="cue">Scroll to feel the love ✧</div>
+  </header>
+
+  <section class="content" id="letter">
+    <div class="section-head reveal"><div class="eyebrow">A note from my heart</div><h2>Dear Yuvika... 💌</h2><p>Thoda words, ghani badhi feelings.</p></div>
+    <article class="panel glass letter">
+      <p><b>Dear Yuvika,</b></p>
+      <p><b>First of all, HAPPIEST BIRTHDAYYYY! 🥹❤️</b></p>
+      <p>Aa letter lakhva betho chhu toh samajh nathi padti kya thi start karu. Kemke ketlak feelings evi hoy chhe je words ma aavta j nathi... ane tu e feelings no ek bahu moto hisso chhe.</p>
+      <p>Aaje taro birthday chhe, pan mara mate aa fakt ek date nathi. Aaj na divase duniya ma ek evi person aavi, jene mali ne life thodi vadhare soft, thodi vadhare sundar lage chhe.</p>
+      <p>Kyarek khabar j nathi padti ke koi kyare aapdi life ma "bas ek vyakti" mathi "bahu important vyakti" bani jaay chhe. Tu e j vyakti chhe, Yuvika.</p>
+      <p>Mari ek dar hamesha rahe chhe, ke life busy thashe, responsibilities vadhshe, loko badlashe, raste juda thashe... Maybe aapde roj vaat pan na kari shakiye. Pan please aa vaat yaad rakhje, tu mara dil ma ek khaas jagya e hamesha rehse. Time ane distance e jagya kyarey nahi laI shake.</p>
+      <p>Ane kyarek jyare tane lage ke tu ekli chhe, ke koi tane samjatu nathi, ke tu pote ochhi chhe... tyare bas ek vaar yaad karje ke koi chhe je tane tari badhi imperfections sathe pan "enough" nahi, "ghanu badhu" maane chhe.</p>
+      <p class="highlight">You don't have to be perfect to be special.<br>Tu jevi chhe, evi j already khaas chhe. ❤️</p>
+      <p>Tu aa badhu deserve kare chhe: genuine happiness, smile karvana endless reasons, darek kaam ma success, eva loko je tane sachche samje ane value kare, ane tara badha dreams reality bane. 🌙</p>
+      <p>Ane haan, kyarek hu tane irritate karu, stupid jokes maru, faltu ni bakbak karu... toh thodu tolerate kari leje 😂. Kemke e pan aapdi friendship no ek cute bhaag chhe.</p>
+      <p>Thank you for every small conversation, every laugh, every silly moment. Thank you for listening, for understanding, ane sauthi vadhare, mari life no ek part banva mate. 🫶</p>
+      <p>Mari pase perfect words nathi, pan aa nani website banavta banavta dil ma ek j vichar hato: <i>"Yuvika ne khabar padvi joiye ke e mara mate ketli matter kare chhe."</i></p>
+      <p>Aajno divas bas taro chhe. Khub smile karje, cake khaje, photos padavje, tara loko sathe time spend karje ane yaadgar memories banavje.</p>
+      <p class="highlight">Once again, happiest birthday, Yuvika! 🎂❤️</p>
+      <p>Hamesha happy rehje. Bhagwan tane khub badhi khushiyo aape. Keep shining. ✨</p>
+      <p>Always your friend,</p>
+      <p class="signature">DIGVIJAYSINH ♡</p>
+    </article>
+  </section>
+
+  <section class="content">
+    <div class="section-head reveal"><div class="eyebrow">Little moments, big memories</div><h2>Our Memory Lane 📸</h2><p>Kaik moments je dil ma hamesha rehse.</p></div>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section class="content" id="cake">
+    <div class="section-head reveal"><div class="eyebrow">Make a little wish</div><h2>A Cake Just For You 🎂</h2><p>Aankho band kar, wish mangi le... aa moment tara mate chhe!</p></div>
+    <div class="panel glass cake-wrap reveal">
+      <canvas id="cakeCanvas"></canvas>
+      <div class="cake-message" id="cakeMessage">Close your eyes, make a wish... ✨</div>
+      <button class="btn" id="blowBtn">Blow the candles 🕯️</button>
+    </div>
+  </section>
+
+  <section class="content" id="wish">
+    <div class="section-head reveal"><div class="eyebrow">Your turn</div><h2>Tari Wish ✉️</h2><p>Tari wish, tara dil ni vaat... je lakhish e god ne direct maleshe.</p></div>
+    <div class="panel glass reveal"><form class="wish-box" id="wishForm">
+      <textarea id="wishText" placeholder="Aaje tane shu wish karvi chhe? Je dil ma hoy e lakh... 💗" required></textarea>
+      <button class="btn" type="submit">Send my wish 💌</button>
+      <div class="wish-status" id="wishStatus" aria-live="polite"></div>
+    </form></div>
+  </section>
+
+  <section class="content reveal">
+    <div class="panel glass final-note">
+      <div class="eyebrow">One last little thing...</div>
+      <h2>Keep Shining, Yuvika ✨</h2>
+      <p>Life tane ghani beautiful opportunities, genuine loko ane unforgettable moments aape. Tu hamesha aavi j smile karti rehje.</p>
+      <p class="serif" style="font-size:1.3rem;color:#ffb4d9">You are special. Today, tomorrow & always. ♡</p>
+      <p>With lots of care & friendship,<br><b class="signature">DIGVIJAYSINH ♡</b></p>
+      <button class="btn" onclick="celebrate()">One More Surprise 🎉</button>
+    </div>
+  </section>
+  <footer>Made with lots of care, just for Yuvika. ♡</footer>
+</main>
+
+<div class="music-control hidden" id="musicControl"><button id="musicBtn" aria-label="Music">♫</button></div>
+<audio id="bgMusic" loop></audio>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/background.js"></script>
+<script src="js/cake.js"></script>
+<script src="js/main.js"></script>
+</body></html>
